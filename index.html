@@ -8,13 +8,13 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 20px; /* Margin added with respect to the border of the screen */
       background-color: #f5f5f5;
     }
     .container {
       display: flex;
-      max-width: 100%; /* Make the container occupy the full visible screen width */
-      margin: 50px auto;
+      max-width: calc(100% - 40px); /* Make the container occupy the full visible screen width minus the padding */
+      margin: 0 auto; /* Center the container horizontally */
     }
     .left-div {
       flex: 1; /* Adjusted to occupy one-third of the screen width */
@@ -23,7 +23,6 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-right: 20px; /* Added margin */
-      margin-left: 20px
     }
     .right-div {
       flex: 2; /* Adjusted to occupy two-thirds of the screen width */
@@ -31,7 +30,6 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin-left: 20px; /* Added margin */
-      margin-right: 20px
     }
     h1, h2 {
       color: #333;
@@ -119,29 +117,4 @@
         <ul>
           <li>Developed a web-based application for [brief description of the project, including technologies used and outcomes achieved]</li>
           <li>Designed and implemented a simple operating system simulation using [brief description of the project, including technologies used and outcomes achieved]</li>
-          <li>Created a mobile application for [brief description of the project, including technologies used and outcomes achieved]</li>
-        </ul>
-      </section>
-      
-      <section>
-        <h2>Experience</h2>
-        <p>[Optional: If you have relevant work experience or internships, list them here]</p>
-      </section>
-      
-      <section>
-        <h2>Certifications</h2>
-        <p>[List any relevant certifications or courses you have completed, along with the issuing organization and date of completion]</p>
-      </section>
-      
-      <section>
-        <h2>Extra-Curricular Activities</h2>
-        <p>[List any relevant extra-curricular activities or clubs you have participated in, particularly those related to computer engineering or technology]</p>
-      </section>
-      
-      <footer>
-        <p><strong>References:</strong> Available upon request.</p>
-      </footer>
-    </div>
-  </div>
-</body>
-</html>
+          <li>Created a mobile application for [brief description of the project, including
