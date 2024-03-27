@@ -13,12 +13,18 @@
     }
     .container {
       display: flex;
-      max-width: 1200px; /* Widened container */
+      max-width: 100%; /* Make the container occupy the full visible screen width */
       margin: 50px auto;
     }
-    .left-div, .right-div {
-      flex: 1;
-      background-color: #fff;
+    .left-div {
+      flex: 1; /* Adjusted to occupy one-third of the screen width */
+      background-color: #e0e0e0; /* Slightly darker background */
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .right-div {
+      flex: 2; /* Adjusted to occupy two-thirds of the screen width */
       padding: 30px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,11 +49,21 @@
       font-size: 24px;
       margin-bottom: 10px;
     }
+    .profile-picture {
+      border: 10px solid white; /* White border */
+      border-radius: 50%; /* To make it a circle */
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="left-div">
+      <!-- Profile Picture -->
+      <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+      <!-- About Me Section -->
       <header>
         <h1>About Me</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in mi ac lectus condimentum consectetur et vel sapien. Vivamus dignissim, sapien eu vehicula vestibulum, libero justo gravida neque, at semper libero mi nec ligula.</p>
