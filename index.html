@@ -19,17 +19,17 @@
     .left-div {
       flex: 1; /* Adjusted to occupy one-third of the screen width */
       background-color: #e0e0e0; /* Slightly darker background */
-      margin-left:-20px
       padding: 30px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-right: 20px; /* Added margin */
     }
     .right-div {
       flex: 2; /* Adjusted to occupy two-thirds of the screen width */
       padding: 30px;
-      margin-right:-20px
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-left: 20px; /* Added margin */
     }
     h1, h2 {
       color: #333;
@@ -57,6 +57,9 @@
       width: 150px;
       height: 150px;
       margin-bottom: 20px;
+      display: block; /* Centering the image */
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
@@ -64,7 +67,7 @@
   <div class="container">
     <div class="left-div">
       <!-- Profile Picture -->
-      <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+      <img src="pfp.png" alt="Profile Picture" class="profile-picture">
       <!-- About Me Section -->
       <header>
         <h1>About Me</h1>
